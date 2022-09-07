@@ -60,7 +60,6 @@ int main(int argc, char** argv) {
         //runs simulation of metal plate heating
         for (int num = 0; num < num_iterations; num++) {
 
-		//print_row_striped_matrix_halo((void**)matrixA, MPI_DOUBLE, rows, cols, MPI_COMM_WORLD);
                 //perform calculations
                 for (int j = 1; j < local_rows; j++) {
                 for (int i = 1; i < cols - 1; i++) {
